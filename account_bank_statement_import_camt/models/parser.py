@@ -59,6 +59,7 @@ class CamtParser(models.AbstractModel):
         self.add_value_from_node(
             ns, node, [
                 './ns:AddtlTxInf',
+                './ns:RmtInf/ns:Strd/ns:CdtrRefInf/ns:Ref',
             ], transaction, 'name', join_str='\n')
         # eref
         self.add_value_from_node(
